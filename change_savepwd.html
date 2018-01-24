@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/allBasic.css">
+    <link rel="stylesheet" href="css/sitePage.css">
+    <title>安全密码管理</title>
+</head>
+<body>
+<div class="page_box">
+    <div class="page_box_head title_color3">
+        <span class="page_title_sign"><i class="iconfont">&#xe6c1;</i></span>
+        <h3 class="page_title">安全密码管理</h3>
+    </div>
+    <div class="page_box_content">
+        <p class="form_hint">输入的值请不要留有空格！</p>
+        <ul class="form_area f_word7 center">
+            <li>
+                <label class="need">新安全密码:</label>
+                <div class="form_inputs">
+                    <input type="password" class="f_element_h write" name="nsave_pwd">
+                </div>
+            </li>
+            <li>
+                <label class="need">新安全密码:</label>
+                <div class="form_inputs">
+                    <input type="password" class="f_element_h write" name="nsave_pwd">
+                </div>
+            </li>
+            <li>
+                <label class="need">手机验证码:</label>
+                <div class="form_inputs yz">
+                    <input type="text" class="f_element_h write" name="mbl_code" >
+                    <input type="button" class="f_element_h check theme_bg unable" value="获取验证码">
+                </div>
+            </li>
+            <li class="allw">
+                <div class="form_inputs  tj_box">
+                    <button type="submit" class="theme_bg submits f_element_h">提交修改</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/checkform.js"></script>
+<script>
+    $(function(){
+        getCheckCode(".form_area .check");
+        sureSubmitSimple(".submits" ,".form_area .write");
+    });
+
+</script>
+</html>

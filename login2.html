@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="css/allBasic.css">
+    <link rel="stylesheet" href="css/login2.css">
+    <title>登录页</title>
+</head>
+<body class="login_wrap">
+<main class="login_main">
+    <h3 class="logo_box"><img src="img/logo.png" class="logo"></h3>
+    <div class="lg_content_box">
+        <ul class="lg_choice clearfix">
+            <li>登录</li>
+            <li>注册</li>
+            <li class="move"></li>
+        </ul>
+        <div class="login_content tab_content ">
+            <ul class="login_input_area">
+                <li class="m">
+                    <label class="ipt_hint iconfont f_element_h">&#xe62e;</label>
+                    <input type="text" placeholder="用户名" class="f_element_h write change_ph" >
+                </li>
+                <li class="m">
+                    <label class="ipt_hint iconfont f_element_h">&#xe669;</label>
+                    <input type="password" placeholder="密码" class="f_element_h write change_ph" >
+                </li>
+                <li class="yz m">
+                    <label class="ipt_hint iconfont f_element_h">&#xe62a;</label>
+                    <input type="text" placeholder="验证码" class="f_element_h write change_ph">
+                    <a href="javascript:void (0)" class="check f_element_h">
+                        <img src="" alt="checkcode"  />
+                    </a>
+                </li>
+            </ul>
+            <p class="lg_more clearfix">
+                <a href="forget_pwd2.html" class="l">忘记密码？</a>
+                <!--<a href="outregister.html" class="r">没有账号去注册</a>-->
+            </p>
+            <div class="login_enter">
+                <button type="submit" class="submits f_element_h" >登录</button>
+                <!--<button type="button" class="btn rgst f_element_h" ><a href="outregister.html">注册</a></button>-->
+            </div>
+        </div>
+        <div class="login_content tab_content active">
+            <ul class="login_input_area">
+                <li class="m">
+                    <label class="ipt_hint iconfont f_element_h">&#xe62e;</label>
+                    <input type="text" placeholder="用户名" class="f_element_h write change_ph" >
+                </li>
+                <li class="m">
+                    <label class="ipt_hint iconfont f_element_h">&#xe669;</label>
+                    <input type="password" placeholder="密码" class="f_element_h write change_ph" >
+                </li>
+                <li class="m">
+                    <label class="ipt_hint iconfont f_element_h">&#xe62e;</label>
+                    <input type="text" placeholder="用户名" class="f_element_h write change_ph" >
+                </li>
+                <li class="yz m">
+                    <label class="ipt_hint iconfont f_element_h">&#xe62a;</label>
+                    <input type="text" placeholder="验证码" class="f_element_h write change_ph">
+                    <a href="javascript:void (0)" class="check f_element_h">
+                        <img src="" alt="checkcode"  />
+                    </a>
+                </li>
+            </ul>
+            <div class="login_enter">
+                <button type="submit" class="submits f_element_h" >注册</button>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script>
+    $().ready(function(){
+        toggleLogin(".lg_choice li",".lg_content_box .tab_content");
+    });
+   function  toggleLogin(btn,content){
+       $(btn).click(function(){
+           var index=$(this).index(),
+               $ico=$(this).siblings(".move"),
+               pst=$(this).position(),
+               item_w=$(this).width(),
+               self_w=$ico.css("border-width"),
+               result_w=pst.left+item_w/2-Number(self_w.split("px")[0]);
+           $ico.stop().animate({"left":result_w+"px"},200);
+//           $(this).addClass("active").siblings(btn).removeClass("active");
+           $(content).eq(index).show().siblings(content).hide();
+       })
+   }
+</script>
+</html>

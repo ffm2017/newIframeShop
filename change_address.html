@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/allBasic.css">
+    <link rel="stylesheet" href="css/sitePage.css">
+    <title>收货地址管理</title>
+</head>
+<body>
+<div class="page_box">
+    <div class="page_box_head title_color2">
+        <span class="page_title_sign"><i class="iconfont">&#xe6c1;</i></span>
+        <h3 class="page_title">收货地址管理</h3>
+    </div>
+    <!--<div class="page_box_content">-->
+        <div class="tbs_area">
+            <a href="change_address_edit.html"><button type="button" class="btn_primary theme_bg f_element_h"><i class="iconfont">&#xe6b0;</i>添加收货地址</button></a>
+            <table class="table_primary">
+                <thead class="theme_bg">
+                <tr>
+                    <th>详细地址</th>
+                    <th>操作</th>
+                    <th>设为默认地址</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <p>张三(1582436954)</p>
+                        <p class="tb_gray1">浙江省嘉兴市南湖区耀城广场B座15层501室</p>
+                    </td>
+                    <td>
+                        <button type="button" class="btn_primary green_bg">
+                            <a href="change_address_edit.html"><i class="iconfont">&#xe673;</i>编辑</a>
+                        </button>
+                        <button type="button" class="btn_primary reg_bg delete">
+                          <i class="iconfont">&#xe6c7;</i>删除
+                        </button>
+                    </td>
+                    <td>
+                        <div class="ipt_all_box">
+                            <em class="iconfont btn">&#xe62f;</em>
+                            <input type="checkbox" class="ipt_hides">
+                        </div>
+                        <!--<input type="checkbox">-->
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    <!--</div>-->
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="./lib/layui/layui.js"></script>
+<!--<script src="js/checkform.js"></script>-->
+<script src="js/siteBasic.js"></script>
+<script>
+    layui.use(['layer','laypage','form'], function(){
+        var laypage = layui.laypage,
+            layer = layui.layer,
+            form=layui.form;
+        form.render();
+        deleteRowDt(".delete");
+    });
+    function deleteRowDt(btn){
+        $(btn).click(function(){
+            top.layer.confirm('确定移除购物车吗？',{
+                btn: ['确定','消息'] //按钮
+            });
+        });
+    }
+    $(function(){
+//        sureSubmitSimple(".submits" ,".form_area .write");
+        checkboxToggle(".ipt_all_box");
+    });
+</script>
+</html>

@@ -1,0 +1,40 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/allBasic.css">
+    <link rel="stylesheet" href="css/sitePage.css">
+    <title>新闻内容</title>
+</head>
+<body>
+<div class="page_box news_content_m">
+    <div class="page_box_head pagego">
+        <a title="返回" onclick="window.history.back()" class="back"><i class="iconfont">&#xe6bf;</i></a>
+        <h3 class="news_title center">
+            新闻标题
+        </h3>
+    </div>
+    <div class="">
+        <div class="article page_box_content">
+            新闻内容:红线标记处均为字体，可选中，交互起来，比图片方便太多了。
+            解决思路就是将体积巨大的中文字库，取子集，只包涵要使用的那部分文字，因此体积就很小了（包含100字左右的中文字，也只有50K左右，如下图：）。英文字库因为本身就小，就没必要再这么做了。
+
+            为了实现以上“取子集”的目标，实际要解决的问题：
+            1、把字库由TTF格式自动转化为woff、eot、svg等兼容格式，并放到相应路径下。
+            2、自动分析并提取网站中用到特殊字体的文字-----这一点很重要，否则每次还要去人工整理，很麻烦。
+
+            以上是理论解释，解决方式主要有两条途径：
+            1、通过网站，国内目前只有：http://www.youziku.com/这一个站。我之前转化成功过，但前阵子出现问题，目前正在恢复中。上传个性化字体，要提请站长人工审核。站长服务意识不错，就是很忙。
+            2、本地用软件转化。我找到了一个很好用的软件：font-spider（字蛛）。
+
+            使用方法网上有详细介绍。需要用node.js的npm方式安装。安装成功后，转化就很方便了，基本步骤是：
+            1、原始字库文件，必须是ttf格式的，如果没有ttf，要自己想办法转化好。
+            2、写好html+Css---举例：h2{font-family: 'xzst';}注意尽量把font-family写在最前面
+            3、一句代码就转化成功，太方便了！转化过程如图：
+        </div>
+    </div>
+</div>
+</body>
+</html>

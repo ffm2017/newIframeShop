@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <link rel="icon" href="img/favicon.ico" type="imgae/x-icon">
+    <link rel="stylesheet" href="css/allBasic.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <title>产品详情页</title>
+</head>
+<body>
+<div class="shop_wrap page_box">
+    <!--<div class="site_toper">-->
+        <!--<div class="m_pbw clearfix">-->
+            <!--<a href="" class="l">返回系统</a>-->
+            <!--<nav class="shop_nav l">-->
+                <!--<a href="goods.html">产品中心</a>-->
+                <!--<a href="cart.html">购物车</a>-->
+                <!--<a href="order.html">订单列表</a>-->
+                <!--<a href="">收货地址</a>-->
+            <!--</nav>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<header class="shop_hed clearfix">-->
+        <!--<div class="m_pbw">-->
+            <!--&lt;!&ndash;<img src="img/logo-x.png" class="logo">&ndash;&gt;-->
+            <!--<h1 class="lg_t">产品详细</h1>-->
+        <!--</div>-->
+    <!--</header>-->
+    <div class="page_box_head title_color3">
+        <span class="page_title_sign"><i class="iconfont">&#xe6c1;</i></span>
+        <h3 class="page_title">详情</h3>
+    </div>
+    <div class="page_box_content god_info_wrap m_pbw">
+        <div class="god_info_sum clearfix">
+            <div class="god_sums_l">
+                <figure class="source_box">
+                    <img src="img/cs.jpg" class="source" id="bigimg">
+                </figure>
+                <div class="thum_box carousel_container" id="good_thum">
+                    <ul class="carousel_wrap">
+                        <li class="slide_item active">
+                            <img src="img/1.jpg">
+                        </li>
+                        <li class="slide_item">
+                            <img src="img/cs.jpg" >
+                        </li>
+                        <li class="slide_item">
+                            <img src="img/1.jpg">
+                        </li>
+
+                    </ul>
+                    <div class="btn prev"><i class="iconfont">&#xe7d4;</i></div>
+                    <div class="btn next"><i class="iconfont">&#xe7d5;</i></div>
+                </div>
+            </div>
+            <ul class="god_sums_r">
+                <li class="good_name">
+                    <h3 class="m">恒源祥男士纯棉V领秋衣秋裤套装 青年薄款保暖内衣全棉冬季棉毛衫</h3>
+                    <p class="sub">2套减20元 纯棉内衣套装 礼盒装！</p>
+                </li>
+                <li class="mark">
+                    <div class="item info_price">
+                        <span class="lb_hint"><i>价格</i>:</span>
+                        <div class="lb_cnt">
+                            <span class="god_price">￥<em>2000</em></span>
+                            <small class="sub_price">
+                                <del>5000元 |</del>
+                                <span class="color1">立减3000元</span>
+                            </small>
+                        </div>
+                    </div>
+                    <div class="item ">
+                        <span class="lb_hint"><i>优惠</i>:</span>
+                        <span class="lb_cnt gray">
+                            大减价
+                        </span>
+                    </div>
+                </li>
+                <li class="item">
+                    <span class="lb_hint"><i>配送</i>:</span>
+                    <span class="lb_cnt">中国大陆地区包邮；15:00之前下单，1-3个工作日内送到！</span>
+                </li>
+                <li class="item">
+                    <span class="lb_hint"><i>库存</i>:</span>
+                    <span class="lb_cnt gray">19999（件）</span>
+                </li>
+                <li class="item">
+                    <span class="lb_hint"><i>配置</i>:</span>
+                    <div class="lb_cnt god_info_type clearfix" id="good_type">
+                        <span class="items">
+                            <span class="txt">黑色</span>
+                            <input type="checkbox" class="choice" value="1">
+                        </span>
+                        <span class="items">
+                            <span class="txt">百色</span>
+                            <input type="checkbox" class="choice" value="2">
+                        </span>
+                        <span class="items">
+                            <span class="txt">红色</span>
+                            <input type="checkbox" class="choice" value="3">
+                        </span>
+                        <span class="items">
+                            <span class="txt">黑色</span>
+                            <input type="checkbox" class="choice" value="4">
+                        </span>
+                        <span class="items">
+                            <span class="txt">黑色</span>
+                            <input type="checkbox" class="choice" value="1">
+                        </span>
+                        <span class="items">
+                            <span class="txt">百色</span>
+                            <input type="checkbox" class="choice" value="2">
+                        </span>
+                        <span class="items">
+                            <span class="txt">红色</span>
+                            <input type="checkbox" class="choice" value="3">
+                        </span>
+                        <span class="items">
+                            <span class="txt">黑色</span>
+                            <input type="checkbox" class="choice" value="4">
+                        </span>
+                    </div>
+                </li>
+                <li class="item">
+                    <span class="lb_hint"><i>数量</i>:</span>
+                    <div class="lb_cnt">
+                        <div class="buy_num" id="buy_num">
+                            <button type="button" class="reduce btn">-</button>
+                            <input type="text" class="num" value="1">
+                            <button type="button" class="add btn">+</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="item">
+                    <span class="lb_hint"></span>
+                    <div class="lb_cnt god_buy">
+                        <a class="items pay">立即购买</a>
+                        <a class="items cart"><i class="iconfont icon_r">&#xe6c3;</i>加入购物车</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="dtshow">
+            <div class="top"><span class="txt">商品详情</span></div>
+            <div class="content">
+                <img src="img/14837604160.png">
+            </div>
+        </div>
+    </div>
+</div>
+<!--<footer class="site_fot clearfix">-->
+    <!--<div class="m_pbw">-->
+        <!--<img src="img/logo-x.png" class="fot_logo">-->
+        <!--Ⓒ 2018 #### 团队出品-->
+    <!--</div>-->
+<!--</footer>-->
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<!--<script src="js/siteBasic.js"></script>-->
+<script src="js/cart.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        changeNum("#buy_num");
+        toggleBidImg("#good_thum","#bigimg");
+        chooseType("#good_type");
+        carousel("#good_thum");
+    });
+    function toggleBidImg(obj1,obj2){
+        $(obj1).on("click mouseover","img",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+            var src=$(this).attr("src");
+            $(obj2).attr("src",src);
+        });
+    }
+    function chooseType(obj){
+        $(obj).on("click",".choice",function(){
+            var val=$(this).val();
+            $(this).parent().toggleClass("active");
+            $(this).parent().siblings().removeClass("active").find(".choice").prop("checked",false);
+        })
+    }
+    function carousel(obj){
+        var prev=$(obj).find(".prev"),
+            next=$(obj).find(".next"),
+            content=$(obj).find(".carousel_wrap"),
+            item=content.find(".slide_item"),
+            width=item.width(),
+            timer,
+            speed=1200,
+            order="",index=0;
+        next.click(function(){
+            running();
+        });
+        prev.click(function(){
+            if(index==0){
+                index=(item.length-1);
+            }else{
+                index--;
+            }
+            slider();
+        });
+        function slider(){
+            content.animate({"left":-index*width});
+            item.eq(index).addClass("active").siblings().removeClass("active");
+        }
+        function running(){
+            if(index>=(item.length-1)){
+                index=0;
+            }else{
+                index++;
+            }
+            slider();
+        }
+        clearInterval(timer);
+//      timer=setInterval(running,speed);
+//      $(obj).mouseover(function(){
+//          clearInterval(timer);
+//      });
+//       $(obj).mouseout(function(){
+//          timer=setInterval(running,speed);
+//      });
+
+    }
+</script>
+</html>

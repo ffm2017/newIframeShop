@@ -1,0 +1,87 @@
+<!Doctype html>
+<html>
+<head>
+    <link href="css/kf.css" rel="stylesheet">
+</head>
+<body>
+<div class="r_sitebar" id="site_rightbar">
+    <ul class="show">
+        <li class="item">
+            <div class="phone">
+                <i class="iconfont">&#xe6f3;</i>
+            </div>
+            <div class="pc">
+                <img src="img/qq.png">
+                <!--QQ客服-->
+            </div>
+            <div class="hides">
+                <p class="time">
+                    客服时间:<em>09:00~17:00</em>
+                </p>
+                <a href="" target="_blank" class="items num">1024321659 <i class="contact">在线咨询</i></a>
+                <a href="" target="_blank" class="items num">1023694256 <i class="contact">在线咨询</i></a>
+                <a href="" target="_blank" class="items num">1023694256 <i class="contact">在线咨询</i></a>
+            </div>
+        </li>
+        <li class="item">
+            <div class="phone">
+                <i class="iconfont">&#xe7e5;</i>
+            </div>
+            <div class="pc">
+                <img src="img/wx.png">
+                <!--微信客服-->
+            </div>
+            <div class="hides">
+                <p class="time">
+                    客服时间:<em>09:00~17:00</em>
+                </p>
+                <div class="wechat">
+                    <a href="" target="_blank" class="items">
+                        <img src="img/11686.png">
+                        <p>扫一扫</p>(张先生)
+                    </a>
+                    <a href="" target="_blank" class="items">
+                        <img src="img/11686.png"><p>扫一扫</p>(张先生)
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li class="item to_top" id="to_top">
+            <div class="phone">
+                <i class="iconfont">&#xe6aa;</i>
+            </div>
+            <div class="pc">
+                <i class="iconfont">&#xe6aa;</i>
+                <p>返回顶部</p>
+            </div>
+        </li>
+    </ul>
+    <p><i class="iconfont close on">&#xe637;</i></p>
+</div>
+<script>
+    $().ready(function(){
+        showRightBar("#site_rightbar");
+
+    });
+    function showRightBar(obj){
+        $(obj).on("mouseenter",".item",function(){
+            $(this).find(".hides").addClass("active");
+        }).on("mouseleave",".item",function(){
+            $(this).find(".hides").removeClass("active");
+        }).on("click",".close",function(){
+            $(obj).find(".show").toggleClass("on");
+            $(this).toggleClass("on");
+            $(".doc_area").toggleClass("on");
+            if( $(this).hasClass("on")){
+                $(this).html("&#xe637;");
+            }else{
+                $(this).html("&#xe6bc;");
+            }
+
+        });
+        showTopperNav("#to_top");
+    }
+</script>
+</body>
+</html>
+

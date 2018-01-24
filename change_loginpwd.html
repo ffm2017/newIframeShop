@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="css/allBasic.css">
+    <link rel="stylesheet" href="css/sitePage.css">
+    <title>登录密码安全管理</title>
+</head>
+<body>
+<div class="page_box">
+    <div class="page_box_head title_color2">
+        <span class="page_title_sign"><i class="iconfont">&#xe6c1;</i></span>
+        <h3 class="page_title">登录密码管理</h3>
+    </div>
+    <div class="page_box_content">
+        <p class="form_hint">输入的值请不要留有空格！</p>
+        <ul class="form_area f_word5">
+            <li>
+                <label class="need">新密码:</label>
+                <div class="form_inputs">
+                    <input type="password" class="f_element_h write" name="new_pwd">
+                </div>
+            </li>
+            <li>
+                <label class="need">确认新密码:</label>
+                <div class="form_inputs">
+                    <input type="password" class="f_element_h write" name="new_pwd">
+                </div>
+            </li>
+            <li>
+                <label class="need">安全密码:</label>
+                <div class="form_inputs">
+                    <input type="password" class="f_element_h write" name="save_pwd">
+                </div>
+            </li>
+            <li class="allw">
+                <div class="form_inputs tj_box">
+                    <button  type="button" class="submits f_element_h" >确认修改</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/checkform.js"></script>
+<script>
+    $(function(){
+        sureSubmitSimple(".submits" ,".form_area .write");
+    });
+</script>
+</html>

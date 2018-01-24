@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="./lib/layui/css/layui.css">
+    <link rel="stylesheet" href="css/allBasic.css">
+    <link rel="stylesheet" href="css/sitePage.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="./lib/layui/layui.js"></script>
+    <script src="js/datetime.js"></script>
+    <title>充值记录</title>
+</head>
+<body>
+<div class="page_box">
+    <div class="page_box_head title_color2">
+        <span class="page_title_sign"><i class="iconfont">&#xe6c1;</i></span>
+        <h3 class="page_title">充值记录</h3>
+    </div>
+    <div class="search_area">
+        <span class="hint">时间范围:</span>
+        <input type="text" class="f_element_h write w_180" placeholder="XXXX-XX-XX" id="time_start" >
+        --
+        <input type="text" class="f_element_h write w_180"  placeholder="XXXX-XX-XX" id="time_end" >
+        <div class="btn_box">
+            <button class="f_element_h btn_primary" type="submit">搜索</button>
+        </div>
+    </div>
+    <div class="tbs_area">
+        <div class="overflow_x">
+            <table class="table_primary">
+                <thead class="theme_bg">
+                <tr>
+                    <th>结算时间</th>
+                    <th>推荐奖</th>
+                    <th>对碰奖</th>
+                    <th>领导奖</th>
+                    <th>保单费</th>
+                    <th>见点奖</th>
+                    <th>复利积分</th>
+                    <th>详情</th>
+                    <th>发生会员</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="tb_gray1 tb_time">2017-02-02 20:00:22</td><td>88888.88</td><td>88888.88</td>
+                    <td>88888.88</td>
+                    <td>88888.88</td>
+                    <td>88888.88</td>
+                    <td>88</td>
+                    <td class="tb_gray1 tb_bz">这是一个很好的系统</td>
+                    <td>超级vip</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="page_nav">
+        <div id="paging"></div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="./lib/layui/layui.js"></script>
+<script>
+    layui.use(['layer','laypage','form','laydate'], function(){
+        var laypage = layui.laypage,
+            laydate = layui.laydate,
+            layer = layui.layer,
+            form=layui.form;
+        laypage.render({
+            elem: 'paging' //注意，这里的 test1 是 ID，不用加 # 号
+            ,count: 50 //数据总数，从服务端得到
+            ,curr:1
+            ,limit:15
+            ,layout:['count', 'prev', 'page', 'next', 'limit', 'skip']
+            ,jump:function(obj,first){
+                if(!first){
+
+                }
+            }
+        });
+        laydate.render({
+            elem: '#time_start'//指定元素
+            ,theme: '#2d425a'
+        });
+        laydate.render({
+            elem: '#time_end'//指定元素
+            ,theme: '#2d425a'
+        });
+    });
+</script>
+</html>

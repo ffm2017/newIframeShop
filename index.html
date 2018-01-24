@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache,must-revalidate">
+        <meta http-equiv="expires" content="0">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <link rel="stylesheet" href="css/allBasic.css">
+        <link rel="stylesheet" href="css/siteIndex.css">
+        <link rel="icon" href="img/favicon.ico" type="imgae/x-icon">
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="./lib/layui/layui.js"></script>
+        <title>88</title>
+    </head>
+    <body>
+    <div class="wrap mcontents">
+    <!--文档头部上-->
+        <div class="site_top clearfix">
+            <div class="item_top">
+                <div class="left logo_w">
+                    <a class="iconfont mnav_btn item" >&#xe6cf;</a>
+                    <a href="desktop.html" data-role="ifmpage">
+                        <img src="img/jyLogo.png" class="logo">
+                    </a>
+                </div>
+                <div class="right">
+                    <div class="item hide_itm" id="top_uinfo">
+                        <span class="show active">张三</span>
+                        <ul class="hide_content">
+                            <li>等级：3级</li>
+                            <li>称号：无敌</li>
+                            <li>服务中心：以及服务中心</li>
+                        </ul>
+                    </div>
+                    <a href="login.html" class="item esc iconfont" >&#xe6db;</a>
+                </div>
+            </div>
+        </div>
+    <!--侧边栏 nav-->
+        <div class="left_sidebar logo_w default_bar" id="site_leftbar">
+            <a class="iconfont mnav_btn" data-role="onbtn">&#xe6cf;</a>
+                <a href="desktop.html" data-role="ifmpage" class="logo_box">
+                    <img src="img/jyLogo.png" class="logo">
+                </a>
+            <ul class="nav_area" id="major_nav">
+                <li class="active">
+                    <a href="desktop.html" class="summary" data-role="ifmpage">
+                        <span><i class="iconfont">&#xe642;</i>首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="summary" >
+                        <span><i class="iconfont">&#xe711;</i>个人中心</span>
+                        <i class="iconfont jt">&#xe624;</i>
+                    </a>
+                    <div class="details">
+                        <a href="user_info.html" data-role="ifmpage">个人资料</a>
+                        <a href="change_loginpwd.html" data-role="ifmpage">登录密码管理</a>
+                        <a href="change_savepwd.html" data-role="ifmpage">安全密码管理</a>
+                        <a href="change_address.html" data-role="ifmpage">收获地址</a>
+                    </div>
+                </li>
+                <li>
+                    <a  class="summary" >
+                        <span><i class="iconfont">&#xe65e;</i>消息公告</span>
+                        <i class="iconfont jt">&#xe624;</i>
+                    </a>
+                    <div class="details">
+                        <a href="companyAccount.html" data-role="ifmpage">公司帐户</a>
+                        <a href="notice.html" data-role="ifmpage">系统公告</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="summary" >
+                        <span><i class="iconfont">&#xe66a;</i>业务管理</span>
+                        <i class="iconfont jt">&#xe624;</i>
+                    </a>
+                    <div class="details">
+                        <a href="inviter.html" data-role="ifmpage">推荐关系</a>
+                        <a href="tree2.html" data-role="ifmpage">接点关系2</a>
+                        <a href="tree3.html" data-role="ifmpage">接点关系3</a>
+                        <a href="user_reg.html" data-role="ifmpage">注册会员</a>
+                        <a href="user_check_list.html" data-role="ifmpage">会员激活</a>
+                        <a href="user_check_info.html" data-role="ifmpage">会员编辑</a>
+                        <a href="repay.html" data-role="ifmpage">积分复投</a>
+                        <a href="uplevel.html" data-role="ifmpage">会员升级</a>
+                    </div>
+                </li>
+                <li>
+                    <a  class="summary">
+                    <span><i class="iconfont">&#xe651;</i>
+                        财务管理</span>
+                        <i class="iconfont jt theme-color">&#xe624;</i>
+                    </a>
+                    <div class="details">
+                        <a href="recharge.html" data-role="ifmpage">充值</a>
+                        <a href="withdraw.html" data-role="ifmpage">提现</a>
+                        <a href="transfer.html" data-role="ifmpage">转账</a>
+                        <a href="exchange.html" data-role="ifmpage">兑换</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="summary">
+                    <span><i class="iconfont">&#xe6e8;</i>
+                       商城中心</span>
+                        <i class="iconfont jt">&#xe624;</i>
+                    </a>
+                    <div class="details">
+                        <a href="goods.html" data-role="ifmpage">产品中心</a>
+                        <!--<a href="pay.html" data-role="ifmpage">付款</a>-->
+                        <a href="cart.html" data-role="ifmpage">我的购物车</a>
+                        <a href="order.html" data-role="ifmpage"> 我的订单</a>
+                    </div>
+                </li>
+                <li>
+                    <a  class="summary">
+                    <span><i class="iconfont">&#xe674;</i>
+                       财务流水日志</span>
+                        <i class="iconfont jt theme-color">&#xe624;</i>
+                    </a>
+                    <div class="details">
+                        <a href="recharge_log.html" data-role="ifmpage">充值记录</a>
+                        <a href="withdraw_log.html" data-role="ifmpage">提现记录</a>
+                        <a href="transfer_log.html" data-role="ifmpage">转账记录</a>
+                        <a href="exchange_log.html" data-role="ifmpage">兑换记录</a>
+                        <a href="user_check_log.html" data-role="ifmpage">激活记录</a>
+                        <a href="repay_log.html" data-role="ifmpage">复投记录</a>
+                        <a href="uplevel_log.html" data-role="ifmpage">升级记录</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="r_sitebar" id="site_rightbar">
+            <ul class="show">
+                <li class="item">
+                    <div class="phone">
+                        <i class="iconfont">&#xe6f3;</i>
+                    </div>
+                    <div class="pc">
+                        <img src="img/qq.png">
+                        <!--QQ客服-->
+                    </div>
+                    <div class="hides">
+                        <p class="time">
+                            客服时间:<em>09:00~17:00</em>
+                        </p>
+                        <a href="" target="_blank" class="items num">1024321659 <i class="contact">在线咨询</i></a>
+                        <a href="" target="_blank" class="items num">1023694256 <i class="contact">在线咨询</i></a>
+                        <a href="" target="_blank" class="items num">1023694256 <i class="contact">在线咨询</i></a>
+                    </div>
+                </li>
+                <li class="item">
+                    <div class="phone">
+                        <i class="iconfont">&#xe7e5;</i>
+                    </div>
+                    <div class="pc">
+                        <img src="img/wx.png">
+                        <!--微信客服-->
+                    </div>
+                    <div class="hides">
+                        <p class="time">
+                            客服时间:<em>09:00~17:00</em>
+                        </p>
+                        <div class="wechat">
+                            <a href="" target="_blank" class="items">
+                                <img src="img/11686.png">
+                                <p>扫一扫</p>(张先生)
+                            </a>
+                            <a href="" target="_blank" class="items">
+                                <img src="img/11686.png"><p>扫一扫</p>(张先生)
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="item to_top" id="to_top">
+                    <div class="phone">
+                        <i class="iconfont">&#xe6aa;</i>
+                    </div>
+                    <div class="pc">
+                        <i class="iconfont">&#xe6aa;</i>
+                        <p>返回顶部</p>
+                    </div>
+                </li>
+            </ul>
+            <p><i class="iconfont close on">&#xe637;</i></p>
+        </div>
+    <!--loading层-->
+        <div class="loading_area active" >
+            <div class="content"><img src="img/loading.gif" >正在加载中...</div>
+        </div>
+        <img src="img/loading.gif" class="waiting" id="ajaxing">
+    <!--文档切换区-->
+        <div class="doc_area">
+            <!--<div class="site_notice">-->
+                <!--<div class="close">-->
+                    <!--<i class="iconfont">&#xe66c;</i>-->
+                <!--</div>-->
+                <!--<div class="content">重要通知,重要通知,重要通知,重要通知,重要通知</div>-->
+            <!--</div>-->
+            <iframe src="desktop2.html"  id="outDoc" name="outDoc" width="100%"  frameborder="0" scrolling="no" ></iframe>
+        </div>
+    </div>
+    <div class="site_tc" id="site_tc">
+        <div class="site_tc_content">
+            <div class="top">
+                <a title="关闭" class="close iconfont" >&#xe635;</a>
+                <a title="最大化" class="max iconfont">&#xe6f2;</a>
+            </div>
+            <div class="m">
+                然后你再看看 stylesheets 下面就多出一个对应名称的 css 文件
+
+
+                这个代码会有很大一堆我就不上代码了，包含了 reset 的样式和你自己的样式 还有注释都保留了的，因为这是开发环境，
+
+                如果是正式环境，需要进行压缩
+
+                下面来改下配置，进入正式环境，将生成的代码压缩成一行
+
+                打开项目根目录下的 config.rb 文件
+
+                添加两行代码：然后你再看看 stylesheets 下面就多出一个对应名称的 css 文件
+
+
+                这个代码会有很大一堆我就不上代码了，包含了 reset 的样式和你自己的样式 还有注释都保留了的，因为这是开发环境，
+
+                如果是正式环境，需要进行压缩
+
+                下面来改下配置，进入正式环境，将生成的代码压缩成一行
+
+                打开项目根目录下的 config.rb 文件
+
+                添加两行代码：然后你再看看 stylesheets 下面就多出一个对应名称的 css 文件
+
+
+                这个代码会有很大一堆我就不上代码了，包含了 reset 的样式和你自己的样式 还有注释都保留了的，因为这是开发环境，
+
+                如果是正式环境，需要进行压缩
+
+                下面来改下配置，进入正式环境，将生成的代码压缩成一行
+
+                打开项目根目录下的 config.rb 文件
+
+                添加两行代码：
+            </div>
+        </div>
+    </div>
+    </body>
+    <script src="js/siteBasic.js"></script>
+    <script>
+        window.onload=function(){
+            $(".loading_area").addClass("active"); //隐藏loading层
+        };
+        layui.use(['laydate','layer'], function(){
+            var laydate = layui.laydate,
+                layer=layui.layer;
+        });
+        function checkCookie_tc(id){
+            var tc=getCookie("tc");
+            var str=$(id).find(".m").html().replace(/\s/g,"");
+            if(str==null || str.length==0){
+                $(id).hide();
+                $("body").removeClass("on");
+            }else{
+                if(tc!=""){
+                    $(id).hide();
+                    $("body").removeClass("on");
+                }else{
+                    $(id).show();
+                    $("body").addClass("on");
+                    setCookie("tc","1");
+                }
+            }
+        }
+        checkCookie_tc("#site_tc");
+        $().ready(function(){
+            iframeHeight("#outDoc");
+            siteEsc(".esc"); /*退出网站*/
+            importHtml("kf.html","#kf");
+            showLeftBar(".mnav_btn","#site_leftbar"); /*导航栏点击*/
+            showRightBar("#site_rightbar");
+//            hideSomeModule(".site_notice");
+            hideSomeModule("#site_tc");
+            btmShowInfo(".hide_itm");
+            maxSomeModule("#site_tc");
+        });
+        function showLeftBar(btn,obj)
+        {
+            $(btn).click(function () {
+                $(obj).toggleClass("active");
+                $(".mcontents").toggleClass("active");
+            });
+            $(obj).on("click","li",function(){
+                $(this).toggleClass("active").find(".details").slideToggle();
+                $(this).siblings().removeClass("active").find(".details").slideUp();
+            });
+            $(obj).find("[data-role='ifmpage']").click(function(e){
+                $(obj).removeClass("active");
+            });
+        }
+        function showRightBar(obj){
+            $(obj).on("mouseenter",".item",function(){
+                $(this).find(".hides").addClass("active");
+            }).on("mouseleave",".item",function(){
+                $(this).find(".hides").removeClass("active");
+            }).on("click",".close",function(){
+                $(obj).find(".show").toggleClass("on");
+                $(this).toggleClass("on");
+                $(".doc_area").toggleClass("on");
+                if( $(this).hasClass("on")){
+                    $(this).html("&#xe637;");
+                }else{
+                    $(this).html("&#xe6bc;");
+                }
+
+            });
+            showTopperNav("#to_top");
+        }
+        function  btmShowInfo(obj){
+          $(obj).on("mouseenter",function(){
+              $(this).find(".show").removeClass("active");
+              $(this).find(".hide_content").show();
+          }).on("mouseleave",function(){
+              $(this).find(".show").addClass("active");
+              $(this).find(".hide_content").hide();
+          });
+        }
+        function maxSomeModule(mdl){
+            $(mdl).on("click",".max",function(){
+                $(mdl).toggleClass("max");
+                if( $(mdl).hasClass("max")){
+                    $(this).html("&#xe6f1;");
+                    $(this).attr("title","最大化");
+                }else{
+                    $(this).html("&#xe6f2;");
+                    $(this).attr("title","最小化");
+                }
+            });
+        }
+    </script>
+</html>
